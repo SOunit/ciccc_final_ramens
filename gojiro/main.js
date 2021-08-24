@@ -13,3 +13,13 @@ $('.slider').slick({
       pauseOnHover: false,
       pauseOnDotsHover: false,
   });
+
+  $(window).scroll(function () {
+    var pos = 800; // 
+    var pos = document.body.clientHeight / 3; 
+    if ($(this).scrollTop() > pos) {
+      $('.ad').fadeIn();
+    } else {
+      $('.ad').fadeOut();
+    }
+  });
