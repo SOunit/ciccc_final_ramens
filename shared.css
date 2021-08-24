@@ -5,6 +5,73 @@
 body {
   margin: 0;
   padding: 0;
-  color: #333;
-  background-color: pink;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+}
+
+.header {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+}
+
+.menu-button {
+  display: block;
+}
+
+.menu-button #open {
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.menu {
+  display: block;
+}
+
+.menu p {
+  color: white;
+  letter-spacing: 0.12em;
+  margin: 0;
+  padding: 3px 10px 0px;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: black;
+  padding: 0px 30px 30px;
+  text-align: center;
+  opacity: 0;
+}
+
+.overlay.show {
+  opacity: 1;
+}
+
+.overlay ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay ul li {
+  padding: 20px 0px;
+}
+
+.menu-button #open.hide {
+  display: none;
+}
+
+.menu-button #close {
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.menu-button #close.hide {
+  display: none;
 }
