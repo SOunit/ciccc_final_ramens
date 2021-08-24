@@ -1,0 +1,122 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: white;
+}
+
+/*==================================================
+css for top
+===================================*/
+.top{
+  background-color: brown;
+  display: flex;
+  justify-content: space-around;
+}
+.top__nav ul{
+  display: flex;
+  gap: 30px;
+  font-size: 22px;
+  list-style: none;
+  position: relative;
+  top: 30px;
+}
+.top__nav a{
+  text-decoration: none;
+  color: white;
+}
+.special__contents{
+  color: black;
+}
+.top__nav a:hover{
+  color: black;
+}
+
+/*==================================================
+css for slider
+===================================*/
+.slider {
+  position:relative;
+  right: 20px;
+  z-index: 1;
+  height: 100vh;
+}
+.slider-item01 {
+  background-image: url(../images/images_gojiro/gojiro_title.jpg);
+}
+.slider-item02 {
+  background-image: url(../images/images_gojiro/gojiro-ramen_slide.jpg);
+}
+.slider-item03 {
+  background-image: url(../images/images_gojiro/gojiro_inside.jpg);
+}
+.slider-item04 {
+  background-image: url(../images/images_gojiro/gojiro_menu-slide.jpg);
+}
+.slider-item {
+  width: 100%;
+  height:100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*css for pointer*/
+.slick-prev, 
+.slick-next {
+  position: absolute;
+  z-index: 3;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  height: 25px;
+  width: 25px;
+}
+.slick-prev {
+  left:2.5%;
+  transform: rotate(-135deg);
+}
+.slick-next {
+  right:2.5%;
+  transform: rotate(45deg);
+}
+.slick-dots{
+	position: relative;
+	z-index: 3;
+  text-align:center;
+	margin: -30px 0 0 0;
+}
+
+.slick-dots li {
+  display:inline-block;
+	margin:0 5px;
+}
+
+.slick-dots button{
+    color: transparent;
+    outline-style: none;
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.863);
+}
+
+.slick-dots .slick-active button{
+    background:rgba(51, 51, 51, 0.671);
+}
+
+/*=============================================*/
+.delivery h2{
+  text-align: center;
+}
+.delivery__img{
+  display: flex;
+  position: relative;
+  left: 40%;
+}
+.skipdishes{
+  border-radius: 50%;
+}
