@@ -113,19 +113,19 @@ li.menu__single:hover ul.menu__second-level {
 }
 
 .slider-item01 {
-  background-image: url(../images/images_gojiro/gojiro_title.jpg);
+  background-image: url(../images/gojiro/gojiro_title.jpg);
 }
 
 .slider-item02 {
-  background-image: url(../images/images_gojiro/gojiro-ramen_slide.jpg);
+  background-image: url(../images/gojiro/gojiro-ramen_slide.jpg);
 }
 
 .slider-item03 {
-  background-image: url(../images/images_gojiro/gojiro_inside.jpg);
+  background-image: url(../images/gojiro/gojiro_inside.jpg);
 }
 
 .slider-item04 {
-  background-image: url(../images/images_gojiro/gojiro_menu-slide.jpg);
+  background-image: url(../images/gojiro/gojiro_menu-slide.jpg);
 }
 
 .slider-item {
@@ -464,19 +464,19 @@ css for laptop
   }
 
   .slider-item01 {
-    background-image: url(../images/images_gojiro/gojiro_title.jpg);
+    background-image: url(../images/gojiro/gojiro_title.jpg);
   }
 
   .slider-item02 {
-    background-image: url(../images/images_gojiro/gojiro-ramen_slide.jpg);
+    background-image: url(../images/gojiro/gojiro-ramen_slide.jpg);
   }
 
   .slider-item03 {
-    background-image: url(../images/images_gojiro/gojiro_inside.jpg);
+    background-image: url(../images/gojiro/gojiro_inside.jpg);
   }
 
   .slider-item04 {
-    background-image: url(../images/images_gojiro/gojiro_menu-slide.jpg);
+    background-image: url(../images/gojiro/gojiro_menu-slide.jpg);
   }
 
   .slider-item {

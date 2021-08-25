@@ -1,3 +1,4 @@
+/*=main slide=*/
 $(".slider").slick({
   autoplay: true,
   autoplaySpeed: 3000,
@@ -23,3 +24,5 @@ $(window).scroll(function () {
     $(".ad").fadeOut();
   }
 });
+
+
