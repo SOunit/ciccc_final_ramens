@@ -1,6 +1,3 @@
-*{
-  box-sizing: border-box;
-}
 body{
   background-color: white;
   font-family: 'Roboto', sans-serif;
@@ -15,14 +12,17 @@ css for cellphone
   justify-content: space-around;
   height: 50px;
 }
+
 .top__logo img{
   margin-top: 5px;
   width: 250px;
   height: 38px;
 }
+
 .top__nav  li .menu__single {
   position: relative;
 }
+
 .top__nav {
   position: relative;
   width: 100%;
@@ -40,48 +40,58 @@ css for cellphone
   line-height: 50px;
   background-color: rgb(197, 54, 54);
 }
+
 .top__nav > li a {
   display: block;
   color: #fff;
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
 }
+
 .top__nav > li a:hover {
   color: black;
 }
+
 .top__nav .special__contents{
   color: black;
 }
+
 ul.menu__second-level {
   visibility: hidden;
   opacity: 0;
   z-index: 1;
   list-style: none;
 }
+
 .top__nav > li:hover {
   background-color: rgb(197, 54, 54);
   -webkit-transition: all .5s;
   transition: all .5s;
 }
+
 .menu__second-level li {
   border-top: 1px solid #111;
 }
+
 li.menu__single ul.menu__second-level {
   position: absolute;
   top: 40px;
-  width: 190px;
+  width: 150px;
   background-color: rgb(197, 54, 54);
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
 }
+
 li.menu__single:hover ul.menu__second-level {
   top: 50px;
   visibility: visible;
   opacity: 1;
 }
+
 .init-bottom{
   margin-left: 50px;
 }
+
 .init-bottom:after {
   display: inline;
   width: 6px;
@@ -93,23 +103,28 @@ li.menu__single:hover ul.menu__second-level {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .map{
   padding: 45px;
 }
+
 .imformation{
   background-color: black;
   padding-bottom: 20px;
 }
+
 .imformation h1{
   color: white;
   font-family: 'Oswald', sans-serif;
   padding: 20px 0px 0px 20px;
 }
+
 .imformation h2{
   color: white;
   padding-left: 20px;
   font-size: 18px;
 }
+
 .imformation p{
   color: white;
   padding-left: 20px;
@@ -127,20 +142,24 @@ css for laptop
     display: flex;
     justify-content: space-around;
   }
+
   .top{
     background-color: rgb(197, 54, 54);
     display: flex;
     justify-content: space-around;
     height: 100px;
   }
+
   .top__logo img{
     margin-top: 20px;
     width: 400px;
     height: 70px;
   }
+
   .top__nav  li .menu__single {
     position: relative;
   }
+
   .top__nav {
     position: relative;
     width: 100%;
@@ -158,51 +177,60 @@ css for laptop
     width: 25%; 
     height: 50px;
     line-height: 50px;
-    background: rgb(197, 54, 54);
-    
+    background: rgb(197, 54, 54); 
   }
+
   .top__nav > li a {
     display: block;
     color: #fff;
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
   }
+
   .top__nav > li a:hover {
     color: black;
   }
+
   .top__nav .special__contents{
     color: black;
   }
+
   ul.menu__second-level {
     visibility: hidden;
     opacity: 0;
     z-index: 1;
     list-style: none;
   }
+
   .top__nav > li:hover {
     background: rgb(197, 54, 54);
     -webkit-transition: all .5s;
     transition: all .5s;
   }
+
   .menu__second-level li {
     border-top: 1px solid #111;
   }
+
   li.menu__single ul.menu__second-level {
     position: absolute;
     top: 40px;
-    width: 180px;
+    width: 140px;
     background: rgb(197, 54, 54);
     -webkit-transition: all .2s ease;
     transition: all .2s ease;
   }
+
   li.menu__single:hover ul.menu__second-level {
     top: 50px;
     visibility: visible;
     opacity: 1;
   }
+
   .init-bottom{
     margin-left: 40px;
   }
+
   .init-bottom:after {
     display: inline;
     width: 6px;
@@ -214,12 +242,16 @@ css for laptop
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
   .contact{
     display: flex;
     justify-content: center;
   }
+
   .imformation{
     width: 400px;
     height: 400px;
     margin: 45px;
   }
+  
+}

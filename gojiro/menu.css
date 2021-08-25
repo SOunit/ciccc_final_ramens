@@ -1,29 +1,29 @@
-*{
-  box-sizing: border-box;
-}
-body{
+body {
   background-color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
 /*==================================================
 css for cellphone
 ===================================*/
-.top{
+.top {
   background-color: rgb(197, 54, 54);
   display: flex;
   justify-content: space-around;
   height: 50px;
 }
-.top__logo img{
+
+.top__logo img {
   margin-top: 5px;
   width: 250px;
   height: 38px;
 }
-.top__nav  li .menu__single {
+
+.top__nav li .menu__single {
   position: relative;
 }
+
 .top__nav {
   position: relative;
   width: 100%;
@@ -36,53 +36,63 @@ css for cellphone
 
 .top__nav > li {
   float: left;
-  width: 25%; 
+  width: 25%;
   height: 50px;
   line-height: 50px;
   background-color: rgb(197, 54, 54);
 }
+
 .top__nav > li a {
   display: block;
   color: #fff;
   text-decoration: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
+
 .top__nav > li a:hover {
   color: black;
 }
-.top__nav .special__contents{
+
+.top__nav .special__contents {
   color: black;
 }
+
 ul.menu__second-level {
   visibility: hidden;
   opacity: 0;
   z-index: 1;
   list-style: none;
 }
+
 .top__nav > li:hover {
   background-color: rgb(197, 54, 54);
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
+
 .menu__second-level li {
   border-top: 1px solid #111;
 }
+
 li.menu__single ul.menu__second-level {
   position: absolute;
   top: 40px;
-  width: 210px;
+  width: 160px;
   background-color: rgb(197, 54, 54);
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
+
 li.menu__single:hover ul.menu__second-level {
   top: 50px;
   visibility: visible;
   opacity: 1;
 }
-.init-bottom{
+
+.init-bottom {
   margin-left: 50px;
 }
+
 .init-bottom:after {
   display: inline;
   width: 6px;
@@ -94,315 +104,383 @@ li.menu__single:hover ul.menu__second-level {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.basic__ramen{
+
+.basic__ramen {
   background-color: black;
 }
-.basic__ramen img{
-  width: 100%;
+
+.basic__ramen img {
+  width: 90%;
   padding: 30px;
 }
-.basic__details{
+
+.basic__details {
   margin: 30px;
 }
-.basic__details h2{
-  font-family: 'Oswald', sans-serif;
+
+.basic__details h2 {
+  font-family: "Oswald", sans-serif;
 }
-.basic__details p{
+
+.basic__details p {
   margin-bottom: 50px;
 }
-.basic__details li{
+
+.basic__details li {
   font-weight: bold;
   font-size: 15px;
   list-style: none;
   margin-bottom: 20px;
   text-align: left;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
-.basic__details li strong{
+
+.basic__details li strong {
   background-color: rgb(197, 54, 54);
   padding: 5px 10px;
   color: white;
   width: 50px;
   margin: 10px;
 }
-.spicy__ramen{
+
+.spicy__ramen {
   background-color: black;
   margin-top: 10px;
 }
-.spicy__ramen img{
-  width: 100%;
+
+.spicy__ramen img {
+  width: 90%;
   padding: 30px;
 }
-.spicy__details{
+
+.spicy__details {
   margin: 30px;
 }
-.spicy__details h2{
-  font-family: 'Oswald', sans-serif;
+
+.spicy__details h2 {
+  font-family: "Oswald", sans-serif;
 }
-.spicy__details p{
+
+.spicy__details p {
   margin-bottom: 50px;
 }
-.spicy__details li{
+
+.spicy__details li {
   font-weight: bold;
   font-size: 15px;
   list-style: none;
   margin-bottom: 20px;
   text-align: left;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
-.spicy__details li strong{
+
+.spicy__details li strong {
   background-color: rgb(197, 54, 54);
   padding: 5px 10px;
   color: white;
   width: 50px;
   margin: 10px;
 }
-.border1{
+
+.border1 {
   height: 1px;
   background-color: rgb(197, 54, 54);
   border: none;
 }
-.ramen__3 img{
-  width: 100%;
+
+.ramen__3 img {
+  width: 90%;
   padding: 30px;
 }
-.ramen__3 p{
+
+.ramen__3 p {
   margin: 30px;
 }
-.ramen__3 h2{
-  font-family: 'Oswald', sans-serif;
+
+.ramen__3 h2 {
+  font-family: "Oswald", sans-serif;
   margin: 30px;
 }
-.ramen__4 img{
-  width: 100%;
+
+.ramen__4 img {
+  width: 90%;
   padding: 30px;
 }
-.ramen__4 p{
+
+.ramen__4 p {
   margin: 30px;
 }
-.ramen__4 h2{
-  font-family: 'Oswald', sans-serif;
+
+.ramen__4 h2 {
+  font-family: "Oswald", sans-serif;
   margin: 30px;
 }
-.ramen__4 li{
+
+.ramen__4 li {
   font-weight: bold;
   font-size: 15px;
   list-style: none;
   margin-bottom: 50px;
   text-align: left;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
-.ramen__4 li strong{
+
+.ramen__4 li strong {
   background-color: rgb(197, 54, 54);
   padding: 5px 10px;
   color: white;
   width: 50px;
   margin: 10px;
 }
-.ramen__5 img{
-  width: 100%;
+
+.ramen__5 img {
+  width: 90%;
   padding: 30px;
 }
-.ramen__5 p{
+
+.ramen__5 p {
   margin: 30px;
 }
-.ramen__5 h2{
-  font-family: 'Oswald', sans-serif;
+
+.ramen__5 h2 {
+  font-family: "Oswald", sans-serif;
   margin: 30px;
 }
-.border2{
+
+.border2 {
   height: 1px;
   background-color: rgb(197, 54, 54);
   border: none;
 }
-.side__title{
-  font-family: 'Oswald', sans-serif;
+
+.side__title {
+  font-family: "Oswald", sans-serif;
   text-align: center;
   font-size: 30px;
 }
-.gyoza{
+
+.gyoza {
   display: block;
   text-align: center;
 }
-.gyoza img{
+
+.gyoza img {
   width: 80%;
   padding: 30px;
 }
-.gyoza p{
+
+.gyoza p {
   margin: 30px;
   text-align: left;
 }
-.gyoza h2{
-  font-family: 'Oswald', sans-serif;
+
+.gyoza h2 {
+  font-family: "Oswald", sans-serif;
   margin: 30px;
   text-align: left;
 }
-.karaage__original{
+
+.karaage__original {
   display: block;
   text-align: center;
 }
-.karaage__original img{
+
+.karaage__original img {
   width: 80%;
   padding: 30px;
 }
-.karaage__original p{
+
+.karaage__original p {
   margin: 30px;
   text-align: left;
 }
-.karaage__original h2{
-  font-family: 'Oswald', sans-serif;
+
+.karaage__original h2 {
+  font-family: "Oswald", sans-serif;
   margin: 30px;
   text-align: left;
 }
-.karaage__tarutaru{
+
+.karaage__tarutaru {
   display: block;
   text-align: center;
 }
-.karaage__tarutaru img{
+
+.karaage__tarutaru img {
   width: 80%;
   padding: 30px;
 }
-.karaage__tarutaru p{
+
+.karaage__tarutaru p {
   margin: 30px;
   text-align: left;
 }
-.karaage__tarutaru h2{
-  font-family: 'Oswald', sans-serif;
+
+.karaage__tarutaru h2 {
+  font-family: "Oswald", sans-serif;
   margin: 30px;
   text-align: left;
 }
-.karaage__teriyaki{
+
+.karaage__teriyaki {
   display: block;
   text-align: center;
 }
-.karaage__teriyaki img{
+
+.karaage__teriyaki img {
   width: 80%;
   padding: 30px;
 }
-.karaage__teriyaki p{
+
+.karaage__teriyaki p {
   margin: 30px;
   text-align: left;
 }
-.karaage__teriyaki h2{
-  font-family: 'Oswald', sans-serif;
+
+.karaage__teriyaki h2 {
+  font-family: "Oswald", sans-serif;
   margin: 30px;
   text-align: left;
 }
-.donburi__title{
-  font-family: 'Oswald', sans-serif;
+
+.donburi__title {
+  font-family: "Oswald", sans-serif;
   text-align: center;
   font-size: 30px;
   color: white;
   padding-top: 30px;
 }
-.donburi{
+
+.donburi {
   background-color: black;
   margin-top: 50px;
   padding-bottom: 40px;
 }
-.shogayaki{
+
+.shogayaki {
   display: block;
   text-align: center;
 }
-.shogayaki img{
+
+.shogayaki img {
   width: 80%;
   padding: 30px;
 }
-.shogayaki p{
+
+.shogayaki p {
   margin: 30px;
   text-align: left;
   color: white;
 }
-.shogayaki h2{
-  font-family: 'Oswald', sans-serif;
+
+.shogayaki h2 {
+  font-family: "Oswald", sans-serif;
   margin: 30px;
   text-align: left;
   color: white;
 }
-.katsu__curry{
+
+.katsu__curry {
   display: block;
   text-align: center;
 }
-.katsu__curry img{
+
+.katsu__curry img {
   width: 80%;
   padding: 30px;
 }
-.katsu__curry p{
+
+.katsu__curry p {
   margin: 30px;
   text-align: left;
   color: white;
 }
-.katsu__curry h2{
-  font-family: 'Oswald', sans-serif;
+
+.katsu__curry h2 {
+  font-family: "Oswald", sans-serif;
   margin: 30px;
   text-align: left;
   color: white;
 }
-.karaage__don{
+
+.karaage__don {
   display: block;
   text-align: center;
 }
-.karaage__don img{
+
+.karaage__don img {
   width: 80%;
   padding: 30px;
 }
-.karaage__don p{
+
+.karaage__don p {
   margin: 30px;
   text-align: left;
   color: white;
 }
-.karaage__don h2{
-  font-family: 'Oswald', sans-serif;
+
+.karaage__don h2 {
+  font-family: "Oswald", sans-serif;
   margin: 30px;
   text-align: left;
   color: white;
 }
-.tonkatsu__don{
+
+.tonkatsu__don {
   display: block;
   text-align: center;
 }
-.tonkatsu__don img{
+
+.tonkatsu__don img {
   width: 80%;
   padding: 30px;
 }
-.tonkatsu__don p{
+
+.tonkatsu__don p {
   margin: 30px;
   text-align: left;
   color: white;
 }
-.tonkatsu__don h2{
-  font-family: 'Oswald', sans-serif;
+
+.tonkatsu__don h2 {
+  font-family: "Oswald", sans-serif;
   margin: 30px;
   text-align: left;
   color: white;
 }
-.drink__title{
-  font-family: 'Oswald', sans-serif;
+
+.drink__title {
+  font-family: "Oswald", sans-serif;
   text-align: center;
   font-size: 30px;
   padding-top: 30px;
 }
-.drink p{
+
+.drink p {
   margin: 30px;
   font-size: 20px;
 }
-.drink strong{
-  font-family: 'Oswald', sans-serif;
+
+.drink strong {
+  font-family: "Oswald", sans-serif;
   text-align: left;
   font-size: 20px;
 }
-.dessert h1{
-  font-family: 'Oswald', sans-serif;
+
+.dessert h1 {
+  font-family: "Oswald", sans-serif;
   text-align: center;
   font-size: 30px;
   padding-top: 30px;
 }
-.dessert p{
+
+.dessert p {
   margin: 30px;
   font-size: 20px;
 }
-.dessert strong{
-  font-family: 'Oswald', sans-serif;
+
+.dessert strong {
+  font-family: "Oswald", sans-serif;
   text-align: left;
   font-size: 20px;
 }
@@ -412,26 +490,30 @@ css for laptop
 ===================================*/
 
 /*==css for top==*/
-@media(min-width: 40rem){
-  .top{
+@media (min-width: 40rem) {
+  .top {
     background-color: rgb(197, 54, 54);
     display: flex;
     justify-content: space-around;
   }
-  .top{
+
+  .top {
     background-color: rgb(197, 54, 54);
     display: flex;
     justify-content: space-around;
     height: 100px;
   }
-  .top__logo img{
+
+  .top__logo img {
     margin-top: 20px;
     width: 400px;
     height: 70px;
   }
-  .top__nav  li .menu__single {
+
+  .top__nav li .menu__single {
     position: relative;
   }
+
   .top__nav {
     position: relative;
     width: 100%;
@@ -443,56 +525,66 @@ css for laptop
     list-style: none;
     z-index: 3;
   }
+
   .top__nav > li {
     float: left;
-    width: 25%; 
+    width: 25%;
     height: 50px;
     line-height: 50px;
     background: rgb(197, 54, 54);
-    
   }
+
   .top__nav > li a {
     display: block;
     color: #fff;
     text-decoration: none;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
   }
+
   .top__nav > li a:hover {
     color: black;
   }
-  .top__nav .special__contents{
+
+  .top__nav .special__contents {
     color: black;
   }
+
   ul.menu__second-level {
     visibility: hidden;
     opacity: 0;
     z-index: 1;
     list-style: none;
   }
+
   .top__nav > li:hover {
     background: rgb(197, 54, 54);
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
+
   .menu__second-level li {
     border-top: 1px solid #111;
   }
+
   li.menu__single ul.menu__second-level {
     position: absolute;
     top: 40px;
-    width: 200px;
+    width: 160px;
     background: rgb(197, 54, 54);
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
+
   li.menu__single:hover ul.menu__second-level {
     top: 50px;
     visibility: visible;
     opacity: 1;
   }
-  .init-bottom{
+
+  .init-bottom {
     margin-left: 40px;
   }
+
   .init-bottom:after {
     display: inline;
     width: 6px;
@@ -504,113 +596,141 @@ css for laptop
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  .menu__1{
+
+  .menu__1 {
     display: flex;
     justify-content: space-between;
   }
-  .basic__ramen{
+
+  .basic__ramen {
     background-color: black;
-    padding-left: 200px;
-    padding-bottom: -20px;
+    width: 500px;
+    padding: 30px 120px 30px;
+    
   }
+  
   .basic__details{
-    padding: 100px;
+    margin: 50px 30px;
   }
-  .basic__details h2{
-    font-family: 'Oswald', sans-serif;
+
+  .basic__details h2 {
+    font-family: "Oswald", sans-serif;
   }
-  .basic__details p{
+
+  .basic__details p {
     margin-bottom: 50px;
   }
-  .basic__details li{
+
+  .basic__details li {
     font-weight: bold;
     font-size: 15px;
     list-style: none;
     margin-bottom: 20px;
     text-align: left;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
   }
-  .basic__details li strong{
+
+  .basic__details strong {
     background-color: rgb(197, 54, 54);
     padding: 5px 10px;
     color: white;
     width: 50px;
     margin: 10px;
   }
-  .menu__2{
+
+  .menu__2 {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
   }
-  .spicy__ramen{
+
+  .spicy__ramen {
     background-color: black;
-    padding-right: 190px;
-    padding-top: 50px;
-    padding-bottom: -20px;
+    width: 500px;
+    padding: 30px 150px 100px;
+    margin-left: 30px;
   }
-  .spicy__ramen img{
+
+  .spicy__ramen img {
     width: 120%;
   }
-  .spicy__details{
-    padding: 100px;
+
+  .spicy__details {
+    padding: 50px;
   }
-  .spicy__details h2{
-    font-family: 'Oswald', sans-serif;
+
+  .spicy__details h2 {
+    font-family: "Oswald", sans-serif;
   }
-  .spicy__details p{
+
+  .spicy__details p {
     margin-bottom: 50px;
   }
-  .spicy__details li{
+
+  .spicy__details li {
     font-weight: bold;
     font-size: 15px;
     list-style: none;
     margin-bottom: 20px;
     text-align: left;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
   }
-  .spicy__details li strong{
+
+  .spicy__details li strong {
     background-color: rgb(197, 54, 54);
     padding: 5px 10px;
     color: white;
     width: 50px;
     margin: 10px;
   }
-  .others{
+
+  .others {
     display: flex;
     justify-content: space-around;
   }
-  .others img{
-    width: 480px;
-    height: 430px;
+
+  .others img {
+    width: 400px;
+    height: 380px;
   }
-  .side__title{
+
+  .side__title {
     font-size: 40px;
   }
-  .side__menu{
+
+  .side__menu {
     display: flex;
     justify-content: space-around;
   }
-  .gyoza{
+
+  .gyoza {
     width: 250px;
     height: 300px;
   }
-  .gyoza img{
+
+  .gyoza img {
     width: 250px;
   }
-  .donburi{
+
+  .donburi {
     display: flex;
     justify-content: space-around;
   }
-  .katsu__curry{
+
+  .katsu__curry {
     width: 300px;
   }
-  .katsu__curry img{
+
+  .katsu__curry img {
     width: 300px;
   }
-  .drink p{
+
+  .drink p {
     text-align: center;
   }
-  .dessert p{
+
+  .dessert p {
     text-align: center;
   }
+  
 }
