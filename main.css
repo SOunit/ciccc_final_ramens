@@ -7,11 +7,27 @@ body {
 
 .main-container-Santouka {
   width: 80%;
-  height: 250px;
+  height: 280px;
   margin: 20px auto 0px 0px;
   background: black;
   display: flex;
   justify-content: space-around;
+  animation-name: slide-to-right;
+  animation-duration: 1s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slide-to-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-800px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .santouka-img {
@@ -20,6 +36,11 @@ body {
 
 .santouka-img img {
   padding: 20px;
+  transition: .5s;
+}
+
+.santouka-img img:hover {
+    transform: scale(1.1,1.1);
 }
 
 .santouka-desc {
@@ -49,11 +70,27 @@ body {
 
 .main-container-Gojiro {
   width: 80%;
-  height: 250px;
+  height: 280px;
   margin: 20px 0px 0px auto;
   background: black;
   display: flex;
   justify-content: space-around;
+  animation-name: slide-to-left;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slide-to-left {
+    0% {
+        opacity: 0;
+        transform: translateX(800px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .gojiro-img {
@@ -62,6 +99,11 @@ body {
 
 .gojiro-img img {
   padding: 20px;
+  transition: .5s;
+}
+
+.santouka-img img:hover {
+    transform: scale(1.1,1.1);
 }
 
 .gojiro-desc {
