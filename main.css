@@ -1,25 +1,93 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-size: 18px;
+}
+
+main {
+  position: relative;
+}
+
+.main-visual-container {
+  width: 100%;
+  margin: 0 auto 70px;
+}
+
+.main-visual-container img {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.main-title {
+  display: block;
+  position: absolute;
+  width: 20%;
+  top: 3%;
+  left: 2%;
+  z-index: 99;
+}
+
+.main-title h1 {
+  position: static;
+  margin: 0 auto;
+  display: inline;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 7vw;
+  font-weight: 800;
+}
+
+.main-title h2 {
+  position: static;
+  display: inline;
+  color: rgb(97, 97, 235);
+  font-size: 7vw;
+}
+
+.main-title h3 {
+  position: static;
+  display: inline;
+  color: #cf2b2a;
+  font-size: 7vw;
 }
 
 .main-container-Santouka {
   width: 80%;
-  height: 250px;
+  height: 280px;
   margin: 20px auto 0px 0px;
   background: black;
   display: flex;
   justify-content: space-around;
+  animation-name: slide-to-right;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-.santouka-img {
+@keyframes slide-to-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-800px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.santouka-img-container {
   display: block;
 }
 
-.santouka-img img {
+.santouka-img-container img {
   padding: 20px;
+  transition: 0.5s;
+}
+
+.santouka-img-container img:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .santouka-desc {
@@ -49,19 +117,40 @@ body {
 
 .main-container-Gojiro {
   width: 80%;
-  height: 250px;
+  height: 280px;
   margin: 20px 0px 0px auto;
   background: black;
   display: flex;
   justify-content: space-around;
+  animation-name: slide-to-left;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-.gojiro-img {
+@keyframes slide-to-left {
+  0% {
+    opacity: 0;
+    transform: translateX(800px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.gojiro-img-container {
   display: block;
 }
 
-.gojiro-img img {
+.gojiro-img-container img {
   padding: 20px;
+  transition: 0.5s;
+}
+
+.gojiro-img-container img:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .gojiro-desc {
@@ -94,4 +183,3 @@ body {
   font-weight: 700;
   text-align: center;
 }
-

@@ -15,6 +15,7 @@ body {
   width: 100%;
   display: flex;
   padding: 20px;
+  z-index: 100;
 }
 
 .menu-button-container {
@@ -39,11 +40,14 @@ body {
 }
 
 .nav-container {
-  top: 0;
+  top: 73px;
   bottom: 0;
   right: 0;
   left: 0;
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0px 30px 30px;
+  position: absolute;
+  z-index: 100;
   text-align: center;
   padding: 0px 30px 30px;
   opacity: 0;
@@ -61,7 +65,7 @@ body {
 }
 
 .nav-container ul li {
-  padding: 20px 0px;
+  padding: 40px 0px;
   transition: opacity 0.3s;
 }
 
