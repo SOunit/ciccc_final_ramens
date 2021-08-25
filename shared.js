@@ -1,67 +1,56 @@
 console.log("hi from js");
 
 {
-  const open = document.getElementById("open");
-  const overlay = document.querySelector(".overlay");
+  const menu_button = document.getElementById("menu-button");
+  const nav_container = document.querySelector(".nav-container");
 
-  const createCloseButton = () => {
+  const addCloseButton = () => {
     const newElement = document.createElement("span");
     const newContent = document.createTextNode("close");
     newElement.appendChild(newContent);
-    newElement.setAttribute("id", "close");
+    newElement.setAttribute("id", "close-button");
     newElement.setAttribute("class", "material-icons");
 
     // get parents' element
-    const parentDiv = document.getElementsByClassName("menu-button");
+    const menu_button_container = document.getElementsByClassName(
+      "menu-button-container"
+    );
     // get child's element to insert before
-    const spanBefore = document.getElementById("open");
-
-    // check
-    // console.log('test insertBefore')
-    // console.log('parentDiv', parentDiv[0]);
-    // console.log('parentDiv.insertBefore',parentDiv[0].insertBefore);
-    // console.log('newElement',newElement);
-    // console.log('spanBefore',spanBefore);
+    const spanBefore = document.getElementById("menu-button");
 
     // insert
-    parentDiv[0].insertBefore(newElement, spanBefore);
+    menu_button_container[0].insertBefore(newElement, spanBefore);
   };
 
   const deleteCloseButton = () => {
-    const closeButton = document.getElementById("close");
-    console.log(closeButton);
-    // const parentDiv = document.getElementsByClassName("menu-button");
-    // parentDiv[0].remove(closeButton);
+    const closeButton = document.getElementById("close-button");
     closeButton.remove();
   };
 
-  open.addEventListener("click", () => {
-    overlay.classList.add("show");
-    open.classList.add("hide");
+  menu_button.addEventListener("click", () => {
+    nav_container.classList.add("show");
+    menu_button.classList.add("hide");
 
-    const close = document.getElementById("close");
-    //check
-    console.log("test close");
-    console.log("close", close);
+    const close_button = document.getElementById("close-button");
 
-    if (close == null) {
-      createCloseButton();
+    if (close_button === null) {
+      addCloseButton();
 
-      const close = document.getElementById("close");
-      close.addEventListener("click", () => {
-        overlay.classList.remove("show");
-        open.classList.remove("hide");
-        close.classList.add("hide");
+      const close_button = document.getElementById("close-button");
+      close_button.addEventListener("click", () => {
+        nav_container.classList.remove("show");
+        menu_button.classList.remove("hide");
+        close_button.classList.add("hide");
       });
     } else {
       deleteCloseButton();
-      createCloseButton();
+      addCloseButton();
 
-      const close = document.getElementById("close");
-      close.addEventListener("click", () => {
-        overlay.classList.remove("show");
-        open.classList.remove("hide");
-        close.classList.add("hide");
+      const close_button = document.getElementById("close-button");
+      close_button.addEventListener("click", () => {
+        nav_container.classList.remove("show");
+        menu_button.classList.remove("hide");
+        close_button.classList.add("hide");
       });
     }
   });
