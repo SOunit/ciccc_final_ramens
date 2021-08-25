@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+}
+
+.main-container-Santouka {
+  width: 80%;
+  height: 280px;
+  margin: 20px auto 0px 0px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  animation-name: slide-to-right;
+  animation-duration: 1s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slide-to-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-800px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.santouka-img {
+  display: block;
+}
+
+.santouka-img img {
+  padding: 20px;
+  transition: .5s;
+}
+
+.santouka-img img:hover {
+    transform: scale(1.1,1.1);
+}
+
+.santouka-desc {
+  display: block;
+}
+
+.santouka-desc h1 {
+  margin: 0;
+  padding: 20px;
+  color: white;
+  letter-spacing: 0.12em;
+}
+
+.santouka-desc p {
+  color: rgb(97, 97, 235);
+  display: inline;
+}
+
+.santouka-desc h2 {
+  font-size: 14px;
+  color: white;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.main-container-Gojiro {
+  width: 80%;
+  height: 280px;
+  margin: 20px 0px 0px auto;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  animation-name: slide-to-left;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slide-to-left {
+    0% {
+        opacity: 0;
+        transform: translateX(800px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.gojiro-img {
+  display: block;
+}
+
+.gojiro-img img {
+  padding: 20px;
+  transition: .5s;
+}
+
+.santouka-img img:hover {
+    transform: scale(1.1,1.1);
+}
+
+.gojiro-desc {
+  display: block;
+}
+
+.gojiro-desc h1 {
+  margin: 0;
+  padding: 20px;
+  color: white;
+  letter-spacing: 0.12em;
+}
+
+.gojiro-desc p {
+  color: #cf2b2a;
+  display: inline;
+}
+
+.gojiro-desc h2 {
+  font-size: 14px;
+  color: white;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.main-caption {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
