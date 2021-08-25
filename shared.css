@@ -16,11 +16,11 @@ body {
   padding: 20px;
 }
 
-.menu-button {
+.menu-button-container {
   display: block;
 }
 
-.menu-button #open {
+.menu-button-container #menu-button {
   color: white;
   font-size: 28px;
   cursor: pointer;
@@ -37,41 +37,57 @@ body {
   padding: 3px 10px 0px;
 }
 
-.overlay {
+.nav-container {
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   background: black;
-  padding: 0px 30px 30px;
   text-align: center;
+  padding: 0px 30px 30px;
   opacity: 0;
+  transition: opacity 0.7s;
 }
 
-.overlay.show {
+.nav-container.show {
   opacity: 1;
 }
 
-.overlay ul {
+.nav-container ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
-.overlay ul li {
+.nav-container ul li {
   padding: 20px 0px;
+  transition: opacity 0.3s;
 }
 
-.menu-button #open.hide {
+.nav-container.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.nav-container.show li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.nav-container.show li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.menu-button-container #menu-button.hide {
   display: none;
 }
 
-.menu-button #close {
+.menu-button-container #close-button {
   color: white;
   font-size: 28px;
   cursor: pointer;
+  transition: opacity 0.3s;
 }
 
-.menu-button #close.hide {
+.menu-button-container #close-button.hide {
   display: none;
 }
