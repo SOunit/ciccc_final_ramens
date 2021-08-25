@@ -43,10 +43,10 @@ body {
   right: 0;
   left: 0;
   background: black;
-  padding: 0px 30px 30px;
   text-align: center;
+  padding: 0px 30px 30px;
   opacity: 0;
-  transition: opacity .7s;
+  transition: opacity 0.7s;
 }
 
 .overlay.show {
@@ -55,13 +55,13 @@ body {
 
 .overlay ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 .overlay ul li {
   padding: 20px 0px;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .overlay.show li {
@@ -70,11 +70,11 @@ body {
 }
 
 .overlay.show li:nth-child(1) {
-  transition-delay: .1s;
+  transition-delay: 0.1s;
 }
 
 .overlay.show li:nth-child(2) {
-  transition-delay: .2s;
+  transition-delay: 0.2s;
 }
 
 .menu-button #open.hide {
@@ -85,7 +85,7 @@ body {
   color: white;
   font-size: 28px;
   cursor: pointer;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .menu-button #close.hide {
