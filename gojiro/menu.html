@@ -12,12 +12,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <!--css for style-->
+  <link rel="stylesheet" href="shared.css" />
   <link rel="stylesheet" href="menu.css">
   <title>Document</title>
 </head>
 <body>
   <header>
-
+    <div class="header">
+      <div class="menu-button-container">
+        <span class="material-icons" id="menu-button">menu</span>
+        <!-- <span class="material-icons" id="close">close</span> -->
+      </div>
+      <div class="menu">
+        <p>MENU</p>
+      </div>
+    </div>
   </header>
   <main>
   <div class="top">
@@ -146,8 +155,19 @@
     </div><!--.animation-->
   </main>
   <footer>
-
+    <div class="footer-container">
+      <ul>
+        <li><a href="./Santouka/index.html">Santouka</a></li>
+        <li><a href="./gojiro/index.html">Gojiro</a></li>
+        <li><a href="./gojiro/contact.html">Contact Us</a></li>
+        <li><a href="./index.html">Page Top</a></li>
+      </ul>
+      <div class="copyright">
+        <p>&copy;Ramens2021. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
-  <script src="main.js"></script>
+    <script src="../shared.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
