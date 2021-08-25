@@ -1,20 +1,22 @@
-console.log("hi from js");
+console.log('hi from js');
 
 {
-  const open = document.getElementById("open");
-  const overlay = document.querySelector(".overlay");
+  const menu_button = document.getElementById('menu-button');
+  const nav_container = document.querySelector('.nav-container');
 
-  const createCloseButton = () => {
-    const newElement = document.createElement("span");
-    const newContent = document.createTextNode("close");
+  const addCloseButton = () => {
+    const newElement = document.createElement('span');
+    const newContent = document.createTextNode('close');
     newElement.appendChild(newContent);
-    newElement.setAttribute("id", "close");
-    newElement.setAttribute("class", "material-icons");
+    newElement.setAttribute('id', 'close-button');
+    newElement.setAttribute('class', 'material-icons');
 
     // get parents' element
-    const parentDiv = document.getElementsByClassName("menu-button");
+    const menu_button_container = document.getElementsByClassName(
+      'menu-button-container'
+    );
     // get child's element to insert before
-    const spanBefore = document.getElementById("open");
+    const spanBefore = document.getElementById('menu-button');
 
     // check
     // console.log('test insertBefore')
@@ -24,44 +26,44 @@ console.log("hi from js");
     // console.log('spanBefore',spanBefore);
 
     // insert
-    parentDiv[0].insertBefore(newElement, spanBefore);
+    menu_button_container[0].insertBefore(newElement, spanBefore);
   };
 
   const deleteCloseButton = () => {
-    const closeButton = document.getElementById("close");
+    const closeButton = document.getElementById('close-button');
     console.log(closeButton);
     // const parentDiv = document.getElementsByClassName("menu-button");
     // parentDiv[0].remove(closeButton);
     closeButton.remove();
   };
 
-  open.addEventListener("click", () => {
-    overlay.classList.add("show");
-    open.classList.add("hide");
+  menu_button.addEventListener('click', () => {
+    nav_container.classList.add('show');
+    menu_button.classList.add('hide');
 
-    const close = document.getElementById("close");
+    const close_button = document.getElementById('close-button');
     //check
-    console.log("test close");
-    console.log("close", close);
+    // console.log("test close");
+    // console.log("close", close);
 
-    if (close == null) {
-      createCloseButton();
+    if (close_button === null) {
+      addCloseButton();
 
-      const close = document.getElementById("close");
-      close.addEventListener("click", () => {
-        overlay.classList.remove("show");
-        open.classList.remove("hide");
-        close.classList.add("hide");
+      const close_button = document.getElementById('close-button');
+      close_button.addEventListener('click', () => {
+        nav_container.classList.remove('show');
+        menu_button.classList.remove('hide');
+        close_button.classList.add('hide');
       });
     } else {
       deleteCloseButton();
-      createCloseButton();
+      addCloseButton();
 
-      const close = document.getElementById("close");
-      close.addEventListener("click", () => {
-        overlay.classList.remove("show");
-        open.classList.remove("hide");
-        close.classList.add("hide");
+      const close_button = document.getElementById('close-button');
+      close_button.addEventListener('click', () => {
+        nav_container.classList.remove('show');
+        menu_button.classList.remove('hide');
+        close_button.classList.add('hide');
       });
     }
   });
