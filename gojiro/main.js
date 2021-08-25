@@ -24,5 +24,3 @@ $(window).scroll(function () {
     $(".ad").fadeOut();
   }
 });
-
-
