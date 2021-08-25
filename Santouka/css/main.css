@@ -1,0 +1,71 @@
+/* 共通 */
+body {
+  margin: 0;
+  background: url(../img/background2.jpeg) center center no-repeat;
+  width: 100%;
+  height: 52rem;
+  background-size: cover;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: lighten;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--------------------
+header
+--------------------*/
+.header_container {
+  /* border: 2px solid red;  */
+  background-color: rgb(46, 45, 45);
+  display: flex;
+}
+
+.nav_items img {
+  /* border: 2px solid blue;  */
+  height: 4em;
+}
+
+.nav_items {
+  /* border: 2px solid blue;  */
+  width: 100%;
+}
+.nav_items ul {
+  /* border: 2px solid blue;  */
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nav_items li {
+  /* border: 2px solid rgb(119, 175, 87); */
+  width: 100%;
+}
+
+.nav_items a {
+  display: block;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding-top: 1.5rem;
+  cursor: pointer;
+}
+
+.nav_items li:hover {
+  opacity: 0.4;
+}
+
+.list {
+  padding-left: 0.6rem;
+}
+
+.list2 {
+  padding-right: 1rem;
+}
