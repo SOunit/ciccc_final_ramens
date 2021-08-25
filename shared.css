@@ -46,6 +46,7 @@ body {
   padding: 0px 30px 30px;
   text-align: center;
   opacity: 0;
+  transition: opacity .7s;
 }
 
 .overlay.show {
@@ -60,6 +61,20 @@ body {
 
 .overlay ul li {
   padding: 20px 0px;
+  transition: opacity .3s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.overlay.show li:nth-child(1) {
+  transition-delay: .1s;
+}
+
+.overlay.show li:nth-child(2) {
+  transition-delay: .2s;
 }
 
 .menu-button #open.hide {
@@ -70,6 +85,7 @@ body {
   color: white;
   font-size: 28px;
   cursor: pointer;
+  transition: opacity .3s;
 }
 
 .menu-button #close.hide {
