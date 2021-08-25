@@ -96,3 +96,42 @@ body {
 .menu-button-container #close-button.hide {
   display: none;
 }
+
+.footer-container {
+  width: 100%;
+  margin-top: 100px;
+  background: black;
+}
+
+.footer-container ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-container li {
+  display: block;
+  padding: 20px;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.footer-container a:hover {
+  font-weight: 800;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  padding-bottom: 10px;
+}
