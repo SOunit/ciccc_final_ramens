@@ -84,6 +84,8 @@ main {
 .santouka-img-container img {
   padding: 20px;
   transition: 0.5s;
+  width: 23.75rem;
+  height: 20rem;
 }
 
 .santouka-img-container img:hover {
@@ -147,6 +149,8 @@ main {
 .gojiro-img-container img {
   padding: 20px;
   transition: 0.5s;
+  width: 23.75rem;
+  height: 20rem;
 }
 
 .gojiro-img-container img:hover {
