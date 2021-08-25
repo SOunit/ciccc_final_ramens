@@ -599,7 +599,7 @@ css for laptop
 
   .menu__1 {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   .basic__ramen {
