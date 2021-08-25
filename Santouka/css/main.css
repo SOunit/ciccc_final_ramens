@@ -1,0 +1,197 @@
+/* 共通 */
+body {
+  margin: 0;
+  background: url(../img/background2.jpeg) center center no-repeat;
+  width: 100%;
+  height: 52rem;
+  background-size: cover;
+  box-sizing: border-box;
+  background-color:rgba(255,255,255,0.5);
+  background-blend-mode: lighten;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--------------------
+header
+--------------------*/
+header {
+  /* border: 2px solid red;  */
+  background-color:rgb(46, 45, 45);
+  display: flex;
+}
+
+header img {
+  /* border: 2px solid blue;  */
+  height: 4em;
+}
+
+header ul {
+  /* border: 2px solid blue;  */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content:space-between; */
+}
+
+header li {
+  /* border: 2px solid rgb(119, 175, 87); */
+  width: 100%;
+}
+
+header a {
+  display: block;
+  color: white;
+  width: 100%;
+  height: 100%;;
+  padding-top: 1.5rem;
+  cursor: pointer;
+  /* text-align: center; */
+}
+
+header li:hover {
+  opacity: 0.4;
+}
+
+.list {
+  padding-left: 0.6rem;
+}
+
+.list2 {
+  margin-right: 0.3rem;
+}
+
+/*----------------
+laptop
+-----------------*/
+@media(min-width: 620px) {
+  header {
+    display: none;
+  }
+  
+  body {
+    background-color:rgba(255,255,255, 0.0);
+    background-blend-mode: normal;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* @import url(https://fonts.googleapis.com/css?family=Unica+One); */
+/* body {
+  background: #222;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+nav ul {
+  font-size: larger;
+  line-height: 2;
+  padding-left: 66.66%;
+}
+
+nav ul li {
+  cursor: pointer;
+  list-style: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: whitesmoke;
+  
+  margin: 0 -.05em;
+}
+
+nav ul li.big {
+  font-size: 2rem;
+}
+
+.home {
+  background: url(../img/background2.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.home img {
+  opacity: 0.7;
+}
+
+
+body:hover .home {
+  transform: perspective(800px) scale(0.5) translateX(-24%) rotateY(20deg);
+  transition: transform .4s;
+  transform-style: preserve-3d;
+} */
+/*# sourceMappingURL=main.css.map */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation: loading 1.6s infinite forwards; */
+/* 
+.layer li:nth-child(1){
+  animation-delay: .1s;
+}
+.layer li:nth-child(2) {
+  animation-delay: .2s;
+}
+.layer li:nth-child(3) {
+  animation-delay: .3s;
+}
+.layer li:nth-child(4) {
+  animation-delay: .4s;
+}
+.layer li:nth-child(5) {
+  animation-delay: .5s;
+} */
+
+
+/* 
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+} */
