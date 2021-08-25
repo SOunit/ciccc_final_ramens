@@ -6,7 +6,7 @@ body {
   margin: 0;
 
   padding: 0;
-  font-family: "Urbanist", sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 18px;
 }
 
@@ -15,6 +15,7 @@ body {
   width: 100%;
   display: flex;
   padding: 20px;
+  z-index: 100;
 }
 
 .menu-button-container {
@@ -39,11 +40,14 @@ body {
 }
 
 .nav-container {
-  top: 0;
+  top: 73px;
   bottom: 0;
   right: 0;
   left: 0;
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0px 30px 30px;
+  position: absolute;
+  z-index: 100;
   text-align: center;
   padding: 0px 30px 30px;
   opacity: 0;
@@ -61,7 +65,7 @@ body {
 }
 
 .nav-container ul li {
-  padding: 20px 0px;
+  padding: 40px 0px;
   transition: opacity 0.3s;
 }
 
@@ -91,4 +95,43 @@ body {
 
 .menu-button-container #close-button.hide {
   display: none;
+}
+
+.footer-container {
+  width: 100%;
+  margin-top: 100px;
+  background: black;
+}
+
+.footer-container ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-container li {
+  display: block;
+  padding: 20px;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.footer-container a:hover {
+  font-weight: 800;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  padding-bottom: 10px;
 }
