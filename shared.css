@@ -43,8 +43,8 @@ body {
   right: 0;
   left: 0;
   background: black;
-  padding: 0px 30px 30px;
   text-align: center;
+  padding: 0px 30px 30px;
   opacity: 0;
 }
 
@@ -54,7 +54,7 @@ body {
 
 .overlay ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
