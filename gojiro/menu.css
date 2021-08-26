@@ -14,7 +14,7 @@ css for cellphone
   height: 50px;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 101;
 }
 
 .top__logo img {
