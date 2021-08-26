@@ -179,6 +179,7 @@ header for mobile
   text-align: center;
   overflow: hidden;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  animation: purupuru 0.1s infinite;
 }
 
 .btn btn:hover {
@@ -203,6 +204,15 @@ header for mobile
   80% { transform: scale(0) rotate(45deg); opacity: 0.5; }
   81% { transform: scale(4) rotate(45deg); opacity: 1; }
   100% { transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+@keyframes purupuru {
+  0% {
+      transform: scale(1, 1);
+  }
+  50% {
+      transform: scale(0.98, 0.95)
+  }
 }
 
 
