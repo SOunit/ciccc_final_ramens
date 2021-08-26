@@ -19,7 +19,7 @@ a {
 }
 
 /*--------------------
-header
+header for mobile
 --------------------*/
 .header_container {
   /* border: 2px solid red;  */
@@ -68,4 +68,155 @@ header
 
 .list2 {
   padding-right: 1rem;
+}
+
+.nav_items2 {
+  display: none;
+}
+
+.imgfor_laptop img {
+  display: none;
+}
+
+/* 創業者の言葉 on body */
+.main_container {
+  /* border: 2px solid red; */
+  width: 90%;
+  margin: 0 auto;
+  height: 70%;
+  writing-mode: vertical-rl;
+}
+
+.sentence {
+  /* border: 2px solid blue; */
+  width: 100%;
+  
+}
+.sentence h1,p {
+  /* border: 2px solid green; */
+  width: 19%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.main_container h1 {
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+
+.main_container p {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.main_container strong {
+  color: rgb(185, 8, 8);
+  font-size: 2rem;
+}
+
+
+.fadein:nth-child(1) {
+  opacity: 0;
+  animation: fadein 6s ease forwards;
+  animation-delay: 1s;
+}
+.fadein:nth-child(2) {
+  opacity: 0;
+  animation: fadein 6s ease forwards;
+  animation-delay: 4s;
+}
+.fadein:nth-child(3) {
+  opacity: 0;
+  animation: fadein 6s ease forwards;
+  animation-delay: 7s;
+}
+.fadein:nth-child(4) {
+  opacity: 0;
+  animation: fadein 6s ease forwards;
+  animation-delay: 10s;
+}
+.fadein:nth-child(5) {
+  opacity: 0;
+  animation: fadein 6s ease forwards;
+  animation-delay: 13s;
+}
+.fadein:nth-child(6) {
+  opacity: 0;
+  animation: fadein 6s ease forwards;
+  animation-delay: 15s;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* button */
+.btn {
+  /* border: 2px solid blue; */
+  width: 40%;
+  margin: 3rem auto;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn a {
+  display: block;
+  color: black;
+}
+
+.btn btn {
+  border: 2px solid rgba(68, 67, 67, 0.5);
+  border-radius: 10px;
+  box-shadow: 2px 5px slategray;
+  display: block;
+  padding: 1.3rem;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn btn:hover {
+  color: #fff;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.btn btn::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny 2s ease-in-out infinite;
+}
+
+@keyframes shiny {
+  0% { transform: scale(0) rotate(45deg); opacity: 0; }
+  80% { transform: scale(0) rotate(45deg); opacity: 0.5; }
+  81% { transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
+/*-------------------
+Laptop
+-------------------*/
+@media (min-width: 650px) {
+  .nav_items img {
+    /* border: 2px solid blue;  */
+    width: 6rem;
+    height: 4.5rem;
+  }
+
+ 
+ 
+
 }
