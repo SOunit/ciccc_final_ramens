@@ -3,7 +3,7 @@ body {
   margin: 0;
   background: url(../img/background2.jpeg) center center no-repeat;
   width: 100%;
-  height: 52rem;
+  height: 53rem;
   background-size: cover;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.5);
@@ -19,7 +19,7 @@ a {
 }
 
 /*--------------------
-header
+header for mobile
 --------------------*/
 .header_container {
   /* border: 2px solid red;  */
@@ -68,4 +68,200 @@ header
 
 .list2 {
   padding-right: 1rem;
+}
+
+.nav_items2 {
+  display: none;
+}
+
+.imgfor_laptop img {
+  display: none;
+}
+
+/* 創業者の言葉 on body */
+.main_container {
+  /* border: 2px solid red; */
+  width: 90%;
+  margin: 0 auto;
+  height: 70%;
+  writing-mode: vertical-rl;
+}
+
+.sentence {
+  /* border: 2px solid blue; */
+  width: 100%;
+  
+}
+.sentence h1,p {
+  /* border: 2px solid green; */
+  width: 19%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.main_container h1 {
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+
+.main_container p {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.main_container strong {
+  color: rgb(185, 8, 8);
+  font-size: 2rem;
+}
+
+
+.fadein {
+  opacity: 0;
+  animation: fadein 6s ease forwards;
+}
+
+.fadein:nth-child(1) {
+  opacity: 0;
+  animation: fadein 6s ease forwards;
+}
+.fadein:nth-child(2) {
+  animation-delay: 1s;
+}
+.fadein:nth-child(3) {
+  animation-delay: 3s;
+}
+.fadein:nth-child(4) {
+  animation-delay: 5s;
+}
+.fadein:nth-child(5) {
+  animation-delay: 7s;
+}
+.fadein:nth-child(6) {
+  animation-delay: 9s;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* button */
+.btn_container {
+  /* border: 2px solid blue; */
+  width: 40%;
+  margin: 3rem auto;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-container a {
+  display: block;
+  color: black;
+}
+
+.btn_container btn {
+  border: 2px solid rgb(37, 37, 37);
+  border-radius: 10px;
+  box-shadow: 2px 5px rgb(41, 42, 43);
+  display: block;
+  padding: 1.3rem;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  animation: purupuru 0.1s infinite;
+}
+
+.btn_container btn:hover {
+  color: #fff;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.btn_container btn::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny 2s ease-in-out infinite;
+}
+
+
+
+@keyframes shiny {
+  0% { transform: scale(0) rotate(45deg); opacity: 0; }
+  80% { transform: scale(0) rotate(45deg); opacity: 0.5; }
+  81% { transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+@keyframes purupuru {
+  0% {
+      transform: scale(1, 1);
+  }
+  50% {
+      transform: scale(0.98, 0.95)
+  }
+}
+
+
+/* --------------------- 
+footer
+------------------------ */
+.footer-container {
+  width: 100%;
+  /* margin-top: 100px; */
+  background: black;
+}
+
+.footer-container ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-container li {
+  display: block;
+  padding: 20px;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.footer-container a:hover {
+  font-weight: 800;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+
+/*-------------------
+Laptop
+-------------------*/
+@media (min-width: 750px) {
+  .nav_items img {
+    /* border: 2px solid blue;  */
+    width: 6rem;
+    height: 4.5rem;
+  }
 }
