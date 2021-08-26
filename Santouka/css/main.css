@@ -154,7 +154,7 @@ header for mobile
 }
 
 /* button */
-.btn {
+.btn_container {
   /* border: 2px solid blue; */
   width: 40%;
   margin: 3rem auto;
@@ -164,12 +164,12 @@ header for mobile
   justify-content: center;
 }
 
-.btn a {
+.btn-container a {
   display: block;
   color: black;
 }
 
-.btn btn {
+.btn_container btn {
   border: 2px solid rgba(68, 67, 67, 0.5);
   border-radius: 10px;
   box-shadow: 2px 5px slategray;
@@ -182,13 +182,13 @@ header for mobile
   animation: purupuru 0.1s infinite;
 }
 
-.btn btn:hover {
+.btn_container btn:hover {
   color: #fff;
   opacity: 0.7;
   cursor: pointer;
 }
 
-.btn btn::before {
+.btn_container btn::before {
   position: absolute;
   content: '';
   display: inline-block;
