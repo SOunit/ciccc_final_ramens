@@ -11,6 +11,9 @@ css for cellphone
   display: flex;
   justify-content: space-around;
   height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .top__logo img{
