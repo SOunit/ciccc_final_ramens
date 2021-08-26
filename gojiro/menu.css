@@ -77,7 +77,7 @@ ul.menu__second-level {
 li.menu__single ul.menu__second-level {
   position: absolute;
   top: 40px;
-  width: 160px;
+  width: 210px;
   background-color: rgb(197, 54, 54);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -569,7 +569,7 @@ css for laptop
   li.menu__single ul.menu__second-level {
     position: absolute;
     top: 40px;
-    width: 160px;
+    width: 200px;
     background: rgb(197, 54, 54);
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -599,13 +599,13 @@ css for laptop
 
   .menu__1 {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
   }
 
   .basic__ramen {
     background-color: black;
-    width: 500px;
-    padding: 30px 120px 30px;
+    width: 50%;
+    padding: 30px 50px 30px 200px;
     
   }
   
@@ -641,14 +641,13 @@ css for laptop
   .menu__2 {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .spicy__ramen {
     background-color: black;
-    width: 500px;
-    padding: 30px 150px 100px;
-    margin-left: 30px;
+    width: 50%;
+    padding: 30px 300px 30px 50px;
   }
 
   .spicy__ramen img {
@@ -657,6 +656,7 @@ css for laptop
 
   .spicy__details {
     padding: 50px;
+    width: 40%;
   }
 
   .spicy__details h2 {
@@ -690,7 +690,7 @@ css for laptop
   }
 
   .others img {
-    width: 400px;
+    width: 480px;
     height: 380px;
   }
 
