@@ -119,32 +119,31 @@ header for mobile
 .fadein:nth-child(1) {
   opacity: 0;
   animation: fadein 6s ease forwards;
-  animation-delay: 1s;
 }
 .fadein:nth-child(2) {
   opacity: 0;
   animation: fadein 6s ease forwards;
-  animation-delay: 4s;
+  animation-delay: 1s;
 }
 .fadein:nth-child(3) {
   opacity: 0;
   animation: fadein 6s ease forwards;
-  animation-delay: 7s;
+  animation-delay: 4s;
 }
 .fadein:nth-child(4) {
   opacity: 0;
   animation: fadein 6s ease forwards;
-  animation-delay: 10s;
+  animation-delay: 7s;
 }
 .fadein:nth-child(5) {
   opacity: 0;
   animation: fadein 6s ease forwards;
-  animation-delay: 13s;
+  animation-delay: 10s;
 }
 .fadein:nth-child(6) {
   opacity: 0;
   animation: fadein 6s ease forwards;
-  animation-delay: 15s;
+  animation-delay: 13s;
 }
 
 @keyframes fadein {
