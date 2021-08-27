@@ -11,6 +11,9 @@ css for cellphone
   display: flex;
   justify-content: space-around;
   height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .top__logo img {
@@ -204,6 +207,10 @@ li.menu__single:hover ul.menu__second-level {
   margin: 0;
 }
 
+.delivery__img img:hover{
+  opacity: 0.5;
+}
+
 .skipdishes {
   border-radius: 50%;
 }
@@ -349,17 +356,15 @@ css for laptop
 
 /*==css for top==*/
 @media (min-width: 40rem) {
-  .top {
-    background-color: rgb(197, 54, 54);
-    display: flex;
-    justify-content: space-around;
-  }
 
   .top {
     background-color: rgb(197, 54, 54);
     display: flex;
     justify-content: space-around;
     height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
   }
 
   .top__logo img {
@@ -553,6 +558,10 @@ css for laptop
 
   .delivery__img a {
     margin: 0;
+  }
+  
+  .delivery__img img:hover{
+    opacity: 0.5;
   }
 
   .skipdishes {
