@@ -4,20 +4,128 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <h1>header</h1>
+      <div class="header">
+        <div class="menu-button-container">
+          <span class="material-icons" id="menu-button">menu</span>
+          <!-- <span class="material-icons" id="close">close</span> -->
+        </div>
+        <div class="menu">
+          <p>MENU</p>
+        </div>
+      </div>
     </header>
+    <!-- === when menu is open === -->
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li>
+            <a href="./Santouka/index.html"
+              ><img
+                src="./images/toppage/logo_Santouka.png"
+                alt="Santouka Logo"
+                width="150px"
+                height="100px"
+            /></a>
+          </li>
+          <li>
+            <a href="./gojiro/index.html"
+              ><img
+                src="./images/toppage/logo_gojiro.png"
+                alt="Gojiro Logo"
+                width="340px"
+                height="50px"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <main>
-      <div>main</div>
+      <div class="main-visual-container">
+        <img src="./images/toppage/main_visual.jpg" alt="Main Visual Image" />
+        <div class="main-title">
+          <h1>
+            Japanese Ramen Battle
+            <h2>.</h2>
+            <h3>.</h3>
+          </h1>
+        </div>
+      </div>
+      <div class="main-container-Santouka">
+        <div class="santouka-img-container">
+          <img
+            src="./images/toppage/ramen3_shio_santouka.png"
+            alt="Ramen from Santouka"
+          />
+        </div>
+        <div class="santouka-desc">
+          <h1>
+            Hokkaido Ramen
+            <p>Santouka</p>
+          </h1>
+          <h2>
+            Like food parents give their children, we strive and pour our love
+            into our ramen. In keeping with the spirit of Santouka at the time
+            of its founding, we aim to be a ramen restaurant that will be loved
+            forever by people around the world. We will never stop delivering
+            our consistent flavor.
+          </h2>
+        </div>
+      </div>
+      <div class="main-caption">
+        <p>WHICH RAMEN WOULD YOU LIKE?</p>
+      </div>
+      <div class="main-container-Gojiro">
+        <div class="gojiro-desc">
+          <h1>
+            RAMEN
+            <p>GOJIRO</p>
+          </h1>
+          <h2>
+            At Ramen Gojiro, we specialize in jiro-style, also known as
+            gatsuri-style, ramen. This style of ramen boasts voluminous amounts
+            of noodles and toppings and is wildly popular in Japan. The
+            over-the-top bowls that we offer at Ramen Gojiro will ensure that
+            your ramen cravings are satisfied.
+          </h2>
+        </div>
+        <div class="gojiro-img-container">
+          <img
+            src="./images/toppage/ramen4_basic_gojiro.png"
+            alt="Ramen from Gojiro"
+          />
+        </div>
+      </div>
     </main>
     <footer>
-      <div>footer</div>
+      <div class="footer-container">
+        <ul>
+          <li><a href="./Santouka/index.html">Santouka</a></li>
+          <li><a href="./gojiro/index.html">Gojiro</a></li>
+          <li><a href="./gojiro/contact/index.html">Contact Us</a></li>
+          <li><a href="./index.html">Page Top</a></li>
+        </ul>
+        <div class="copyright">
+          <p>&copy;Ramens2021. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
     <script src="./shared.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
